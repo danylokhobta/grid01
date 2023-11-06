@@ -1,0 +1,11 @@
+.arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:70px;
+    display: none;
+    cursor: pointer;
+}
+.arrow img{
+    width: 100%;
+}

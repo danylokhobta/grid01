@@ -1,0 +1,12 @@
+@import './_variables'
+.AppRouter
+  .tab-content
+    border: 2px solid $taffy
+    border-top: 0
+    border-bottom: 0
+    .tab-pane
+      opacity: 0
+      transition: opacity 0.5s ease-in-out 
+
+      &.active
+        opacity: 1

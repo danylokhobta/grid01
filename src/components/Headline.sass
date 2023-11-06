@@ -1,0 +1,58 @@
+@import '../_variables'
+.Headline
+  position: relative
+  width: 100%
+  display: flex
+  grid-column-start: span 2
+  gap: 2px
+  .img
+    order: 2
+    flex: 1
+    img
+      width: 100%
+      max-height: 100%
+
+  .text
+    order: 1
+    position: relative
+    background-color: $ube
+    width: 60%
+    height: 100%
+    box-sizing: border-box
+    padding: 22px
+    margin: auto 0
+    display: grid
+    align-content: center
+    p
+      max-width: 568px
+      font-size: 20px
+      margin-top: 80px
+
+  .to-right
+    order: 3
+
+@media screen and (max-width: 970px)
+  .Headline
+    .text
+      p
+        font-size: 13.3px
+        margin-top: 53.3px
+
+@media only screen and (max-width: 690px) 
+  .Headline
+    .text
+      p
+        margin-top: 35.5px
+
+@media only screen and (max-width: 500px) 
+  .Headline
+    flex-direction: column
+    .img
+      width: 100%
+
+    .text
+      width: 100%
+      margin: 0 0
+
+    .to-right
+      order: 1

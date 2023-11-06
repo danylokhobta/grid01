@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap')
+@import '_variables'
+
+::selection
+  color: $lime
+  background: $taffy
+
+::-webkit-scrollbar
+  width: 15px
+
+::-webkit-scrollbar-track
+  background: $ube
+
+::-webkit-scrollbar-thumb 
+  background: white
+  border: 1px solid $taffy
+
+::-webkit-scrollbar-thumb:hover
+  background: $taffy
+
+body
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+img
+  user-select: none
+  display: block
+
+h1, h2, h4, p
+  margin: 0
+  color: $taffy
+
+h1
+  font-weight: 900
+  letter-spacing: 3px
+
+h2
+  font-weight: 700
+  font-size: 56px
+  line-height: 100%
+
+h4
+  font-size: 28px
+  font-weight: 700
+
+p
+  font-size: 20px
+  font-weight: 400
+
+.taffy-borders
+  gap: 2px
+  background-color: $taffy
+
+@media screen and (max-width: 970px)
+  h2
+    font-size: 37px
+    line-height: 100%
+
+  p
+    font-size: 13.3px
+
+@media screen and (max-width: 690px)
+  h2
+    font-size: 24px
+
+/* SECTION */
+
+section
+  position: relative
+  padding: 70px 24px
+  background-color: $ube
+  box-sizing: border-box
+
+section:hover .arrow
+  display: block
+
+@media screen and (max-width: 970px)
+  section
+      padding: 46px 24px
+
+@media screen and (max-width: 590px)
+  section
+      padding: 30.6px 12px
+      grid-column-start: span 2

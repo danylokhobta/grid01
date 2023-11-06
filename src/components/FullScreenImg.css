@@ -1,0 +1,5 @@
+img{
+    position: relative;
+    grid-column-start: span 2;
+    width:100%;
+}

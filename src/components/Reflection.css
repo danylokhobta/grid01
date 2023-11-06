@@ -1,0 +1,11 @@
+.reflection{
+    width: 100%;
+    padding: 167px 22px;
+    text-align: center;
+    grid-column-start: span 2;
+}
+.reflection p{
+    max-width: 568px;
+    margin:auto;
+    margin-top: 24px;
+}

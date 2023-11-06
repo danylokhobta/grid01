@@ -1,0 +1,16 @@
+@import '../_variables'
+.Contact
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  background-color: $taffy
+  padding: 2px 2px 0 2px
+  gap: 2px
+  section
+    background-color: $ube
+    display: flex
+    align-items: center
+    h2
+      width: 100%
+      text-align: center
+      &:hover ~ .arrow
+        display:block
